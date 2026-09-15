@@ -1,7 +1,7 @@
 #ifndef BLOHO_LIGHTING_GLSL
 #define BLOHO_LIGHTING_GLSL
 
-#includ "/lib/common.glsl"
+#include "/lib/common.glsl"
 
 const vec3 dayLightColor = vec3(1.00, 0.95, 0.85);
 const vec3 nightLightColor = vec3(0.18, 0.25, 0.42);

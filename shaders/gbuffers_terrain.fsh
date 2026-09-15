@@ -4,7 +4,7 @@
 #include "/lib/settings.glsl"
 #include "/lib/lighting.glsl"
 
-uniform sampler2D texture;
+uniform sampler2D gtexture;
 
 varying vec2 texcoord;
 varying vec4 vertexColor;
