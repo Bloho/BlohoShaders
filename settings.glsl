@@ -25,15 +25,15 @@
 #define COLOR_WARMTH 0.25 // [-0.5 -0.25 0.0 0.25 0.5]
 #define VIGNETTE_STRENGTH 0.08 // [0.0 0.04 0.08 0.12 0.2]
 
-#define BLOHO_FOG
-#define FOG_STRENGTH
+#define BLOHO_FOG 1 // [0 1]
+#define FOG_STRENGTH 0.7 // [0.0 0.35 0.7 1.0 1.4]
 
 
 // 0 will restore vanilla normal ahh clouds also depends on the game settings
-#define BLOHO_CLOUDS
-#define CLOUD_COVERAGE
-#define CLOUD_HEIGHT
-#define CLOUD_SPEED
+#define BLOHO_CLOUDS 1 // [0 1]
+#define CLOUD_COVERAGE 0.52 // [0.35 0.45 0.52 0.6 0.7]
+#define CLOUD_HEIGHT 224.0 // [160.0 192.0 224.0 256.0 288.0]
+#define CLOUD_SPEED 1.0 // [0.0 0.5 1.0 1.5 2.0]
 
 
 
