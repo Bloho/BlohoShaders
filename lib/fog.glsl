@@ -10,20 +10,19 @@ uniform float rainStrength;
 float blohoVisibility(vec3 viewPosition) {
     float distanceToEye = length(viewPosition);
     if (fogShape == 1) {
-        distanceToEye = max (length(viewPosition.xz), abs(viewPosition.y));
+        distanceToEye = max(length(viewPosition.xz), abs(viewPosition.y));
     }
     float visibility = 1.0;
     if (fogMode == 9729 && fogEnd > fogStart) {
         visibility = 1.0 - smoothstep(fogStart, fogEnd, distanceToEye);
     } else if (fogMode == 2048) {
-        visibility = exp(-max(fogDensity, 0.0) * distanceToEye)
+        visibility = exp(-max(fogDensity, 0.0) * distanceToEye);
     } else if (fogMode == 2049) {
         float opticalDistance = max(fogDensity, 0.0) * distanceToEye;
         visibility = exp(-opticalDistance * opticalDistance);
     }
-
     if (far > 0.0) {
-        float hazaDistance = max(distanceToEye - 16.0, 0.0);
+        float hazeDistance = max(distanceToEye - 16.0, 0.0);
         float density = FOG_STRENGTH * (1.0 + 1.8 * rainStrength) / max(far * 2.8, 128.0);
         visibility *= exp(-hazeDistance * density);
     }
