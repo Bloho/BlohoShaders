@@ -41,7 +41,7 @@ vec3 blohoCloudLayer(vec3 background, vec3 worldRay, float hitDistance,
     float density = smoothstep(1.0 - coverage, 1.16 - coverage, field);
     float horizonFade = smoothstep(0.02, 0.12, abs(worldRay.y));
     float distanceFade = 1.0 - smoothstep(1000.0, 1800.0, hitDistance);
-    // Fades gently when the camera crosses a sheet instead of covering the view.
+    // Fades gently 
     float nearFade = smoothstep(0.0, 10.0, hitDistance);
     float opacity = density * 0.78 * horizonFade * distanceFade * nearFade;
 
@@ -67,11 +67,11 @@ vec3 blohoClouds(vec3 background, vec2 uv) {
     if (sceneDistance <= 0.0) return background;
     vec3 worldRay = mat3(gbufferModelViewInverse) * (viewPosition / sceneDistance);
     if (abs(worldRay.y) < 0.02) return background;
-    // Sky depth is far-plane depth, not an opaque surface at the far plane.
+    // Sky depth is far-plane depth,
     if (depth >= 1.0) sceneDistance = 1800.0;
     float lowerDistance = (CLOUD_HEIGHT - cameraPosition.y) / worldRay.y;
     float upperDistance = (CLOUD_HEIGHT + 28.0 - cameraPosition.y) / worldRay.y;
-    // Composite far sheet first, including when flying above the clouds.
+    // Composite far sheet first
     if (upperDistance > lowerDistance) {
         background = blohoCloudLayer(background, worldRay, upperDistance, sceneDistance, 1.0);
         background = blohoCloudLayer(background, worldRay, lowerDistance, sceneDistance, 0.0);
