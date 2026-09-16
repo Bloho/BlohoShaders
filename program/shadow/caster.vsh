@@ -13,4 +13,3 @@ void main() {
     shadowMaterial = mc_Entity.x;
 }
 
-yeah this
