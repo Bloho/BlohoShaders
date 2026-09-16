@@ -1,0 +1,2 @@
+#ifndef BLOHO_SETTINGS
+#define BLOHO_SETTINGS
