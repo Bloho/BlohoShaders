@@ -4,9 +4,9 @@
 #define BLOHO_TITLE 0 // [0]
 
 #define BLOHO_BLOOM 1 // [0 1]
-#define BLOOM_STRENGTH 0.3 // []
-#define BLOOM_THRESHOLD 0.85 // []
-#define BLOOM_RADIUS 3.0 // []
+#define BLOOM_STRENGTH 0.3 // [0.0 0.1 0.16 0.22 0.3 0.4 0.55]
+#define BLOOM_THRESHOLD 0.85 // [0.6 0.7 0.75 0.8 0.85 0.9 1.0]
+#define BLOOM_RADIUS 3.0 // [1.0 2.0 3.0 4.0]
 
 #define BLOHO_LIGHTING 1 // []
 #define BLOHO_SHADOWS 1 // []
