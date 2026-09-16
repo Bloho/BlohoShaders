@@ -18,6 +18,13 @@
 #define NEUTRAL_ORE_GLOW
 #define BLOHO_WATER 1 // []
 
+#define BLOHO_GRADE 1 // []
+#define EXPOSURE
+#define CONTRAST
+#define SATURATION
+#define COLOR_WARMTH
+#define VIGNETTE_STRENGTH
+
 
 
 
