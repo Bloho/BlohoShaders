@@ -3,6 +3,6 @@
 #define BLOHO_TEXTURED
 #define BLOHO_LIGHTMAP
 #define BLOHO_SURFACE
-#define BLOHO_FAMILY 
+#define BLOHO_FAMILY 6.0
 #define BLOHO_HAND
 #include "/program/gbuffer/geometry.vsh"
