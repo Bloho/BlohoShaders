@@ -25,10 +25,15 @@
 #define COLOR_WARMTH
 #define VIGNETTE_STRENGTH
 
+#define BLOHO_FOG
+#define FOG_STRENGTH
 
 
-
-
+// 0 will restore vanilla normal ahh clouds also depends on the game settings
+#define BLOHO_CLOUDS
+#define CLOUD_COVERAGE
+#define CLOUD_HEIGHT
+#define CLOUD_SPEED
 
 
 
