@@ -13,11 +13,11 @@ const bool colortex3Clear = true;
 const bool colortex4Clear = true;
 const bool colortex5Clear = true;
 // leaving colortex0's clear color to default which is the current fog's color too lol
-const vec4 colortex1ClearColor = vec4(0.0);
-const vec4 colortex2ClearColor = vec4(0.0);
-const vec4 colortex3ClearColor = vec4(0.0);
-const vec4 colortex4ClearColor = vec4(0.0);
-const vec4 colortex5ClearColor = vec4(0.0);
+const vec4 colortex1ClearColor = vec4(0.0, 0.0, 0.0, 0.0);
+const vec4 colortex2ClearColor = vec4(0.0, 0.0, 0.0, 0.0);
+const vec4 colortex3ClearColor = vec4(0.0, 0.0, 0.0, 0.0);
+const vec4 colortex4ClearColor = vec4(0.0, 0.0, 0.0, 0.0);
+const vec4 colortex5ClearColor = vec4(0.0, 0.0, 0.0, 0.0);
 
 
 

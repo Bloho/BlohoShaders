@@ -29,3 +29,4 @@ float blohoShadow(vec3 scenePosition, vec3 worldNormal) {
     float edgeFade = smoothstep(shadowDistance * 0.75, shadowDistance, length(scenePosition.xz));
     return mix(visibility / 9.0, 1.0, edgeFade);
 }
+
