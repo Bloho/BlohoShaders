@@ -15,7 +15,7 @@ uniform int blockEntityId;
 
 void main() {
     // same engine transform for geo and overlays
-    gl_Position = ftransform();
+    gl_Position = gl_ProjectionMatrix * (gl_ModelViewMatrix * gl_Vertex);
     vertexTint = gl_Color;
 #if BLOHO_LIGHTING == 1 && defined BLOHO_SURFACE
     lightingScenePosition = (gbufferModelViewInverse * gl_ModelViewMatrix * gl_Vertex).xyz;

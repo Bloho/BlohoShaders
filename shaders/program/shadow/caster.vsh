@@ -7,7 +7,7 @@ attribute vec3 mc_Entity;
 
 void main() {
     // light-camera matrices
-    gl_Position = ftransform();
+    gl_Position = gl_ProjectionMatrix * (gl_ModelViewMatrix * gl_Vertex);
     shadowUV = (gl_TextureMatrix[0] * gl_MultiTexCoord0).xy;
     shadowTint = gl_Color;
     shadowMaterial = mc_Entity.x;
